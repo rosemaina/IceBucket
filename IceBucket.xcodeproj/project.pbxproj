@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		301577FB213942610031DDFF /* BucketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301577F9213942610031DDFF /* BucketCell.swift */; };
+		301577FE21395A5B0031DDFF /* BucketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 301577FD21395A5B0031DDFF /* BucketCell.xib */; };
+		3015780221395DDB0031DDFF /* UITableViewCell+NibName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3015780121395DDB0031DDFF /* UITableViewCell+NibName.swift */; };
+		3015780A213E705E0031DDFF /* BucketlistItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30157809213E705E0031DDFF /* BucketlistItemsView.swift */; };
+		3087AB2321407B1F00CE501A /* BucketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3087AB2221407B1F00CE501A /* BucketListView.swift */; };
+		3087AB2521407BF500CE501A /* BucketListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3087AB2421407BF500CE501A /* BucketListDetailView.swift */; };
+		30AF72BA21381C02008C19DF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AF72B921381C02008C19DF /* LoginView.swift */; };
+		30AF72BC21381D31008C19DF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AF72BB21381D31008C19DF /* SignUpView.swift */; };
+		30B040A2214A8F1A00FA1B35 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B040A1214A8F1A00FA1B35 /* Networking.swift */; };
+		30F4589B212EEE6A00E33ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F4589A212EEE6A00E33ABC /* AppDelegate.swift */; };
+		30F458A2212EEE6C00E33ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F458A1212EEE6C00E33ABC /* Assets.xcassets */; };
+		30F458A5212EEE6C00E33ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F458A3212EEE6C00E33ABC /* LaunchScreen.storyboard */; };
+		30F458B0212EEE6C00E33ABC /* IceBucketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F458AF212EEE6C00E33ABC /* IceBucketTests.swift */; };
+		30F458BB212EEE6C00E33ABC /* IceBucketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F458BA212EEE6C00E33ABC /* IceBucketUITests.swift */; };
+		30F458DA212EF24500E33ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F458D9212EF24500E33ABC /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30F458AC212EEE6C00E33ABC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30F4588F212EEE6A00E33ABC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30F45896212EEE6A00E33ABC;
+			remoteInfo = IceBucket;
+		};
+		30F458B7212EEE6C00E33ABC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30F4588F212EEE6A00E33ABC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30F45896212EEE6A00E33ABC;
+			remoteInfo = IceBucket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		301577F9213942610031DDFF /* BucketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketCell.swift; sourceTree = "<group>"; };
+		301577FD21395A5B0031DDFF /* BucketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BucketCell.xib; sourceTree = "<group>"; };
+		3015780121395DDB0031DDFF /* UITableViewCell+NibName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+NibName.swift"; sourceTree = "<group>"; };
+		30157809213E705E0031DDFF /* BucketlistItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketlistItemsView.swift; sourceTree = "<group>"; };
+		3087AB2221407B1F00CE501A /* BucketListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BucketListView.swift; sourceTree = "<group>"; };
+		3087AB2421407BF500CE501A /* BucketListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListDetailView.swift; sourceTree = "<group>"; };
+		30AF72B921381C02008C19DF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		30AF72BB21381D31008C19DF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		30B040A1214A8F1A00FA1B35 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		30F45897212EEE6A00E33ABC /* IceBucket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceBucket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F4589A212EEE6A00E33ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30F458A1212EEE6C00E33ABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30F458A4212EEE6C00E33ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30F458A6212EEE6C00E33ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30F458AB212EEE6C00E33ABC /* IceBucketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IceBucketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F458AF212EEE6C00E33ABC /* IceBucketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceBucketTests.swift; sourceTree = "<group>"; };
+		30F458B1212EEE6C00E33ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30F458B6212EEE6C00E33ABC /* IceBucketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IceBucketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F458BA212EEE6C00E33ABC /* IceBucketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceBucketUITests.swift; sourceTree = "<group>"; };
+		30F458BC212EEE6C00E33ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30F458D9212EF24500E33ABC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30F45894212EEE6A00E33ABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F458A8212EEE6C00E33ABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F458B3212EEE6C00E33ABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30157807213E6EFD0031DDFF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				301577FD21395A5B0031DDFF /* BucketCell.xib */,
+				301577F9213942610031DDFF /* BucketCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		30157808213E6F250031DDFF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3015780121395DDB0031DDFF /* UITableViewCell+NibName.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30F4588E212EEE6A00E33ABC = {
+			isa = PBXGroup;
+			children = (
+				30B040A1214A8F1A00FA1B35 /* Networking.swift */,
+				30157808213E6F250031DDFF /* Extensions */,
+				30F458CF212EF04D00E33ABC /* BucketlistItems */,
+				30F458CE212EF04200E33ABC /* BucketLists */,
+				30F458CA212EEED200E33ABC /* Authentication */,
+				30F45899212EEE6A00E33ABC /* IceBucket */,
+				30F458AE212EEE6C00E33ABC /* IceBucketTests */,
+				30F458B9212EEE6C00E33ABC /* IceBucketUITests */,
+				30F45898212EEE6A00E33ABC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30F45898212EEE6A00E33ABC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30F45897212EEE6A00E33ABC /* IceBucket.app */,
+				30F458AB212EEE6C00E33ABC /* IceBucketTests.xctest */,
+				30F458B6212EEE6C00E33ABC /* IceBucketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30F45899212EEE6A00E33ABC /* IceBucket */ = {
+			isa = PBXGroup;
+			children = (
+				30F458D9212EF24500E33ABC /* Main.storyboard */,
+				30F4589A212EEE6A00E33ABC /* AppDelegate.swift */,
+				30F458A1212EEE6C00E33ABC /* Assets.xcassets */,
+				30F458A3212EEE6C00E33ABC /* LaunchScreen.storyboard */,
+				30F458A6212EEE6C00E33ABC /* Info.plist */,
+			);
+			path = IceBucket;
+			sourceTree = "<group>";
+		};
+		30F458AE212EEE6C00E33ABC /* IceBucketTests */ = {
+			isa = PBXGroup;
+			children = (
+				30F458AF212EEE6C00E33ABC /* IceBucketTests.swift */,
+				30F458B1212EEE6C00E33ABC /* Info.plist */,
+			);
+			path = IceBucketTests;
+			sourceTree = "<group>";
+		};
+		30F458B9212EEE6C00E33ABC /* IceBucketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				30F458BA212EEE6C00E33ABC /* IceBucketUITests.swift */,
+				30F458BC212EEE6C00E33ABC /* Info.plist */,
+			);
+			path = IceBucketUITests;
+			sourceTree = "<group>";
+		};
+		30F458CA212EEED200E33ABC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				30F458CD212EEEEB00E33ABC /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		30F458CD212EEEEB00E33ABC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30AF72B921381C02008C19DF /* LoginView.swift */,
+				30AF72BB21381D31008C19DF /* SignUpView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30F458CE212EF04200E33ABC /* BucketLists */ = {
+			isa = PBXGroup;
+			children = (
+				30F458D3212EF08B00E33ABC /* Views */,
+				3087AB2221407B1F00CE501A /* BucketListView.swift */,
+				3087AB2421407BF500CE501A /* BucketListDetailView.swift */,
+			);
+			path = BucketLists;
+			sourceTree = "<group>";
+		};
+		30F458CF212EF04D00E33ABC /* BucketlistItems */ = {
+			isa = PBXGroup;
+			children = (
+				30F458D0212EF08000E33ABC /* Views */,
+			);
+			path = BucketlistItems;
+			sourceTree = "<group>";
+		};
+		30F458D0212EF08000E33ABC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30157809213E705E0031DDFF /* BucketlistItemsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30F458D3212EF08B00E33ABC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30157807213E6EFD0031DDFF /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30F45896212EEE6A00E33ABC /* IceBucket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30F458BF212EEE6C00E33ABC /* Build configuration list for PBXNativeTarget "IceBucket" */;
+			buildPhases = (
+				30F45893212EEE6A00E33ABC /* Sources */,
+				30F45894212EEE6A00E33ABC /* Frameworks */,
+				30F45895212EEE6A00E33ABC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IceBucket;
+			productName = IceBucket;
+			productReference = 30F45897212EEE6A00E33ABC /* IceBucket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30F458AA212EEE6C00E33ABC /* IceBucketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30F458C2212EEE6C00E33ABC /* Build configuration list for PBXNativeTarget "IceBucketTests" */;
+			buildPhases = (
+				30F458A7212EEE6C00E33ABC /* Sources */,
+				30F458A8212EEE6C00E33ABC /* Frameworks */,
+				30F458A9212EEE6C00E33ABC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30F458AD212EEE6C00E33ABC /* PBXTargetDependency */,
+			);
+			name = IceBucketTests;
+			productName = IceBucketTests;
+			productReference = 30F458AB212EEE6C00E33ABC /* IceBucketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30F458B5212EEE6C00E33ABC /* IceBucketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30F458C5212EEE6C00E33ABC /* Build configuration list for PBXNativeTarget "IceBucketUITests" */;
+			buildPhases = (
+				30F458B2212EEE6C00E33ABC /* Sources */,
+				30F458B3212EEE6C00E33ABC /* Frameworks */,
+				30F458B4212EEE6C00E33ABC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30F458B8212EEE6C00E33ABC /* PBXTargetDependency */,
+			);
+			name = IceBucketUITests;
+			productName = IceBucketUITests;
+			productReference = 30F458B6212EEE6C00E33ABC /* IceBucketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30F4588F212EEE6A00E33ABC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Rose Maina";
+				TargetAttributes = {
+					30F45896212EEE6A00E33ABC = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					30F458AA212EEE6C00E33ABC = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 30F45896212EEE6A00E33ABC;
+					};
+					30F458B5212EEE6C00E33ABC = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 30F45896212EEE6A00E33ABC;
+					};
+				};
+			};
+			buildConfigurationList = 30F45892212EEE6A00E33ABC /* Build configuration list for PBXProject "IceBucket" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30F4588E212EEE6A00E33ABC;
+			productRefGroup = 30F45898212EEE6A00E33ABC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30F45896212EEE6A00E33ABC /* IceBucket */,
+				30F458AA212EEE6C00E33ABC /* IceBucketTests */,
+				30F458B5212EEE6C00E33ABC /* IceBucketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30F45895212EEE6A00E33ABC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F458A5212EEE6C00E33ABC /* LaunchScreen.storyboard in Resources */,
+				301577FE21395A5B0031DDFF /* BucketCell.xib in Resources */,
+				30F458A2212EEE6C00E33ABC /* Assets.xcassets in Resources */,
+				30F458DA212EF24500E33ABC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F458A9212EEE6C00E33ABC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F458B4212EEE6C00E33ABC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30F45893212EEE6A00E33ABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301577FB213942610031DDFF /* BucketCell.swift in Sources */,
+				3015780A213E705E0031DDFF /* BucketlistItemsView.swift in Sources */,
+				30AF72BC21381D31008C19DF /* SignUpView.swift in Sources */,
+				30B040A2214A8F1A00FA1B35 /* Networking.swift in Sources */,
+				3087AB2321407B1F00CE501A /* BucketListView.swift in Sources */,
+				30AF72BA21381C02008C19DF /* LoginView.swift in Sources */,
+				3087AB2521407BF500CE501A /* BucketListDetailView.swift in Sources */,
+				3015780221395DDB0031DDFF /* UITableViewCell+NibName.swift in Sources */,
+				30F4589B212EEE6A00E33ABC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F458A7212EEE6C00E33ABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F458B0212EEE6C00E33ABC /* IceBucketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F458B2212EEE6C00E33ABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F458BB212EEE6C00E33ABC /* IceBucketUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30F458AD212EEE6C00E33ABC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30F45896212EEE6A00E33ABC /* IceBucket */;
+			targetProxy = 30F458AC212EEE6C00E33ABC /* PBXContainerItemProxy */;
+		};
+		30F458B8212EEE6C00E33ABC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30F45896212EEE6A00E33ABC /* IceBucket */;
+			targetProxy = 30F458B7212EEE6C00E33ABC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30F458A3212EEE6C00E33ABC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30F458A4212EEE6C00E33ABC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30F458BD212EEE6C00E33ABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30F458BE212EEE6C00E33ABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30F458C0212EEE6C00E33ABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YS8PS8335D;
+				INFOPLIST_FILE = IceBucket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ace.IceBucket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30F458C1212EEE6C00E33ABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YS8PS8335D;
+				INFOPLIST_FILE = IceBucket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ace.IceBucket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30F458C3212EEE6C00E33ABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IceBucketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ace.IceBucketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IceBucket.app/IceBucket";
+			};
+			name = Debug;
+		};
+		30F458C4212EEE6C00E33ABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IceBucketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ace.IceBucketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IceBucket.app/IceBucket";
+			};
+			name = Release;
+		};
+		30F458C6212EEE6C00E33ABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IceBucketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ace.IceBucketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IceBucket;
+			};
+			name = Debug;
+		};
+		30F458C7212EEE6C00E33ABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IceBucketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ace.IceBucketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IceBucket;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30F45892212EEE6A00E33ABC /* Build configuration list for PBXProject "IceBucket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30F458BD212EEE6C00E33ABC /* Debug */,
+				30F458BE212EEE6C00E33ABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30F458BF212EEE6C00E33ABC /* Build configuration list for PBXNativeTarget "IceBucket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30F458C0212EEE6C00E33ABC /* Debug */,
+				30F458C1212EEE6C00E33ABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30F458C2212EEE6C00E33ABC /* Build configuration list for PBXNativeTarget "IceBucketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30F458C3212EEE6C00E33ABC /* Debug */,
+				30F458C4212EEE6C00E33ABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30F458C5212EEE6C00E33ABC /* Build configuration list for PBXNativeTarget "IceBucketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30F458C6212EEE6C00E33ABC /* Debug */,
+				30F458C7212EEE6C00E33ABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30F4588F212EEE6A00E33ABC /* Project object */;
+}
