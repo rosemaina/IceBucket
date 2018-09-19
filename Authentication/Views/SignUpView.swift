@@ -7,22 +7,43 @@
 //
 
 import UIKit
+import GoogleSignIn
 
-class SignUpView: UIViewController {
+class SignUpView: UIViewController, GIDSignInUIDelegate {
+    
+//    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+//        performSegue(withIdentifier: "SignUpToBucketLists", sender: nil)
+//    }
     
     
-    @IBAction func viewBucketListsButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "SignUpToBucketLists", sender: nil)
-    }
+    // MARK: - Private Instance Properties
     
-    @IBAction func backToLogin(_ sender: UIButton) {
-        performSegue(withIdentifier: "SignUpToLogin", sender: nil)
-    }
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var signUpButton: GIDSignInButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        GIDSignIn.sharedInstance().uiDelegate = self as GIDSignInUIDelegate
+        
+        // Uncomment to automatically sign in the user.
+//        GIDSignIn.sharedInstance().signInSilently()
+        
+        // TODO(developer) Configure the sign-in button look/feel
+    }
+    
+    // MARK: - Private Instance Methods
+    
+    @IBAction func viewBucketListsButton(_ sender: UIButton) {
+
+    }
+    
+    @IBAction func backToLogin(_ sender: UIButton) {
+        performSegue(withIdentifier: "SignUpToLogin", sender: nil)
     }
     
 }

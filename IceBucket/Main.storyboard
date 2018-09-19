@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -186,14 +186,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Sign up with Goggle"/>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avE-h0-iyr" customClass="GIDSignInButton">
+                                <rect key="frame" x="70" y="534" width="206" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Aeu-As-6ht"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="m89-QM-T8Y" id="grt-g8-peN"/>
+                        <outlet property="emailTextField" destination="xbf-Uj-Pu0" id="vGk-UO-rTp"/>
+                        <outlet property="passwordTextField" destination="SEz-av-fhc" id="KeL-nO-eSh"/>
+                        <outlet property="signUpButton" destination="avE-h0-iyr" id="POb-5b-aZ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fh-cw-dum" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1072.8" y="-969.26536731634189"/>
+            <point key="canvasLocation" x="897" y="-1115"/>
         </scene>
         <!--Bucketlists-->
         <scene sceneID="UIY-Ya-x6o">
@@ -317,6 +328,6 @@
         <image name="logo1" width="1500" height="1500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="S9H-hI-4Ji"/>
+        <segue reference="79o-Ya-Sya"/>
     </inferredMetricsTieBreakers>
 </document>

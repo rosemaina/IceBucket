@@ -22,6 +22,10 @@
 		30F458B0212EEE6C00E33ABC /* IceBucketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F458AF212EEE6C00E33ABC /* IceBucketTests.swift */; };
 		30F458BB212EEE6C00E33ABC /* IceBucketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F458BA212EEE6C00E33ABC /* IceBucketUITests.swift */; };
 		30F458DA212EF24500E33ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F458D9212EF24500E33ABC /* Main.storyboard */; };
+		30F87A3C21522FD500A5E440 /* BucketListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F87A3B21522FD500A5E440 /* BucketListModel.swift */; };
+		811FFA4E0F62B5BD7ED5F6D6 /* Pods_IceBucketUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90267E99049D03B3CFD9542D /* Pods_IceBucketUITests.framework */; };
+		B0168F270B0B96F356D9374E /* Pods_IceBucketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F83D4767FF7459E6AEA4A5 /* Pods_IceBucketTests.framework */; };
+		C1119EF4EDEA9790D565BF98 /* Pods_IceBucket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3A8E4E1B6A77EFC4E5D39F /* Pods_IceBucket.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,16 @@
 		30F458BA212EEE6C00E33ABC /* IceBucketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceBucketUITests.swift; sourceTree = "<group>"; };
 		30F458BC212EEE6C00E33ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30F458D9212EF24500E33ABC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		30F87A3B21522FD500A5E440 /* BucketListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListModel.swift; sourceTree = "<group>"; };
+		425281E77249626CC0AEEB90 /* Pods-IceBucketUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBucketUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IceBucketUITests/Pods-IceBucketUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4FED202B424933DED80EAF68 /* Pods-IceBucketUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBucketUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IceBucketUITests/Pods-IceBucketUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		594259045FA95D0347749498 /* Pods-IceBucketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBucketTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IceBucketTests/Pods-IceBucketTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B3A8E4E1B6A77EFC4E5D39F /* Pods_IceBucket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IceBucket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F83D4767FF7459E6AEA4A5 /* Pods_IceBucketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IceBucketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFAC45E99C87D89CF0251D6 /* Pods-IceBucket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBucket.release.xcconfig"; path = "Pods/Target Support Files/Pods-IceBucket/Pods-IceBucket.release.xcconfig"; sourceTree = "<group>"; };
+		90267E99049D03B3CFD9542D /* Pods_IceBucketUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IceBucketUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9603D72D2348B68EF5100093 /* Pods-IceBucket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBucket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IceBucket/Pods-IceBucket.debug.xcconfig"; sourceTree = "<group>"; };
+		EAAB1D56160AD0882A7AFC71 /* Pods-IceBucketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBucketTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IceBucketTests/Pods-IceBucketTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1119EF4EDEA9790D565BF98 /* Pods_IceBucket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0168F270B0B96F356D9374E /* Pods_IceBucketTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811FFA4E0F62B5BD7ED5F6D6 /* Pods_IceBucketUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,13 +128,16 @@
 			isa = PBXGroup;
 			children = (
 				30B040A1214A8F1A00FA1B35 /* Networking.swift */,
-				30157808213E6F250031DDFF /* Extensions */,
+				30F458CA212EEED200E33ABC /* Authentication */,
 				30F458CF212EF04D00E33ABC /* BucketlistItems */,
 				30F458CE212EF04200E33ABC /* BucketLists */,
-				30F458CA212EEED200E33ABC /* Authentication */,
+				30157808213E6F250031DDFF /* Extensions */,
+				33DE453A114271BBD19810AD /* Frameworks */,
 				30F45899212EEE6A00E33ABC /* IceBucket */,
 				30F458AE212EEE6C00E33ABC /* IceBucketTests */,
 				30F458B9212EEE6C00E33ABC /* IceBucketUITests */,
+				30F87A3E2152310900A5E440 /* Models */,
+				47705BE61662C1FC6ED3CD11 /* Pods */,
 				30F45898212EEE6A00E33ABC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -182,9 +202,8 @@
 		30F458CE212EF04200E33ABC /* BucketLists */ = {
 			isa = PBXGroup;
 			children = (
+				30157807213E6EFD0031DDFF /* Cells */,
 				30F458D3212EF08B00E33ABC /* Views */,
-				3087AB2221407B1F00CE501A /* BucketListView.swift */,
-				3087AB2421407BF500CE501A /* BucketListDetailView.swift */,
 			);
 			path = BucketLists;
 			sourceTree = "<group>";
@@ -208,9 +227,41 @@
 		30F458D3212EF08B00E33ABC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				30157807213E6EFD0031DDFF /* Cells */,
+				3087AB2421407BF500CE501A /* BucketListDetailView.swift */,
+				3087AB2221407B1F00CE501A /* BucketListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		30F87A3E2152310900A5E440 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30F87A3B21522FD500A5E440 /* BucketListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		33DE453A114271BBD19810AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B3A8E4E1B6A77EFC4E5D39F /* Pods_IceBucket.framework */,
+				66F83D4767FF7459E6AEA4A5 /* Pods_IceBucketTests.framework */,
+				90267E99049D03B3CFD9542D /* Pods_IceBucketUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47705BE61662C1FC6ED3CD11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9603D72D2348B68EF5100093 /* Pods-IceBucket.debug.xcconfig */,
+				8CFAC45E99C87D89CF0251D6 /* Pods-IceBucket.release.xcconfig */,
+				594259045FA95D0347749498 /* Pods-IceBucketTests.debug.xcconfig */,
+				EAAB1D56160AD0882A7AFC71 /* Pods-IceBucketTests.release.xcconfig */,
+				4FED202B424933DED80EAF68 /* Pods-IceBucketUITests.debug.xcconfig */,
+				425281E77249626CC0AEEB90 /* Pods-IceBucketUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,9 +271,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30F458BF212EEE6C00E33ABC /* Build configuration list for PBXNativeTarget "IceBucket" */;
 			buildPhases = (
+				BF2A300018942746CEA74654 /* [CP] Check Pods Manifest.lock */,
 				30F45893212EEE6A00E33ABC /* Sources */,
 				30F45894212EEE6A00E33ABC /* Frameworks */,
 				30F45895212EEE6A00E33ABC /* Resources */,
+				4392D7D2BABEC743439E58D4 /* [CP] Embed Pods Frameworks */,
+				71C16C726B132BC5EE924EDC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,6 +291,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30F458C2212EEE6C00E33ABC /* Build configuration list for PBXNativeTarget "IceBucketTests" */;
 			buildPhases = (
+				85EC3CF1D6333974C8AF4C6D /* [CP] Check Pods Manifest.lock */,
 				30F458A7212EEE6C00E33ABC /* Sources */,
 				30F458A8212EEE6C00E33ABC /* Frameworks */,
 				30F458A9212EEE6C00E33ABC /* Resources */,
@@ -255,6 +310,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30F458C5212EEE6C00E33ABC /* Build configuration list for PBXNativeTarget "IceBucketUITests" */;
 			buildPhases = (
+				9DA004DCE1044C441424124B /* [CP] Check Pods Manifest.lock */,
 				30F458B2212EEE6C00E33ABC /* Sources */,
 				30F458B3212EEE6C00E33ABC /* Frameworks */,
 				30F458B4212EEE6C00E33ABC /* Resources */,
@@ -340,6 +396,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4392D7D2BABEC743439E58D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IceBucket/Pods-IceBucket-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IceBucket/Pods-IceBucket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71C16C726B132BC5EE924EDC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IceBucket/Pods-IceBucket-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IceBucket/Pods-IceBucket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85EC3CF1D6333974C8AF4C6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IceBucketTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DA004DCE1044C441424124B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IceBucketUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF2A300018942746CEA74654 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IceBucket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		30F45893212EEE6A00E33ABC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -352,6 +505,7 @@
 				3087AB2321407B1F00CE501A /* BucketListView.swift in Sources */,
 				30AF72BA21381C02008C19DF /* LoginView.swift in Sources */,
 				3087AB2521407BF500CE501A /* BucketListDetailView.swift in Sources */,
+				30F87A3C21522FD500A5E440 /* BucketListModel.swift in Sources */,
 				3015780221395DDB0031DDFF /* UITableViewCell+NibName.swift in Sources */,
 				30F4589B212EEE6A00E33ABC /* AppDelegate.swift in Sources */,
 			);
@@ -516,6 +670,7 @@
 		};
 		30F458C0212EEE6C00E33ABC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9603D72D2348B68EF5100093 /* Pods-IceBucket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +689,7 @@
 		};
 		30F458C1212EEE6C00E33ABC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CFAC45E99C87D89CF0251D6 /* Pods-IceBucket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +708,7 @@
 		};
 		30F458C3212EEE6C00E33ABC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 594259045FA95D0347749498 /* Pods-IceBucketTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -572,6 +729,7 @@
 		};
 		30F458C4212EEE6C00E33ABC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAAB1D56160AD0882A7AFC71 /* Pods-IceBucketTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -592,6 +750,7 @@
 		};
 		30F458C6212EEE6C00E33ABC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FED202B424933DED80EAF68 /* Pods-IceBucketUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -611,6 +770,7 @@
 		};
 		30F458C7212EEE6C00E33ABC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 425281E77249626CC0AEEB90 /* Pods-IceBucketUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
