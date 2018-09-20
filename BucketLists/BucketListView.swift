@@ -13,6 +13,7 @@ class BucketListView: UIViewController {
     @IBOutlet weak var tablview: UITableView!
     
     var cell: String?
+    var bucketLists: [[String: Any]] = [[:]]
     
     @IBAction func addBucketListButton(_ sender: UIButton) {
         
@@ -27,7 +28,14 @@ class BucketListView: UIViewController {
         registerCells()
 
         navigationController?.navigationBar.prefersLargeTitles = true
-        Networking().getBucketList()
+        Networking().getBucketList(url: "/bucketlist/") { (data) in
+            guard let data = data as? NSDictionary else { return }
+            
+            DispatchQueue.main.async {
+                self.bucketLists = data["bucketlist"] as! [[String: Any]]
+                self.tablview.reloadData()
+            }
+        }
 
     }
     
@@ -47,12 +55,14 @@ class BucketListView: UIViewController {
 extension BucketListView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return bucketLists.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: BucketCell.reuseIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: BucketCell.reuseIdentifier, for: indexPath) as! BucketCell
+        cell.bucketTitle.text = bucketLists[indexPath.row] ["title"] as? String
+        
         return cell
     }
     

@@ -22,6 +22,8 @@
 		30F458B0212EEE6C00E33ABC /* IceBucketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F458AF212EEE6C00E33ABC /* IceBucketTests.swift */; };
 		30F458BB212EEE6C00E33ABC /* IceBucketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F458BA212EEE6C00E33ABC /* IceBucketUITests.swift */; };
 		30F458DA212EF24500E33ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F458D9212EF24500E33ABC /* Main.storyboard */; };
+		30F87A41215233C200A5E440 /* BucketListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F87A40215233C200A5E440 /* BucketListDataModel.swift */; };
+		30F87A43215233E900A5E440 /* BucketItemsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F87A42215233E900A5E440 /* BucketItemsDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		30F458BA212EEE6C00E33ABC /* IceBucketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceBucketUITests.swift; sourceTree = "<group>"; };
 		30F458BC212EEE6C00E33ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30F458D9212EF24500E33ABC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		30F87A40215233C200A5E440 /* BucketListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListDataModel.swift; sourceTree = "<group>"; };
+		30F87A42215233E900A5E440 /* BucketItemsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemsDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 		30F4588E212EEE6A00E33ABC = {
 			isa = PBXGroup;
 			children = (
+				30F87A3F2152339A00A5E440 /* Models */,
 				30B040A1214A8F1A00FA1B35 /* Networking.swift */,
 				30157808213E6F250031DDFF /* Extensions */,
 				30F458CF212EF04D00E33ABC /* BucketlistItems */,
@@ -211,6 +216,15 @@
 				30157807213E6EFD0031DDFF /* Cells */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		30F87A3F2152339A00A5E440 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30F87A40215233C200A5E440 /* BucketListDataModel.swift */,
+				30F87A42215233E900A5E440 /* BucketItemsDataModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +361,7 @@
 			files = (
 				301577FB213942610031DDFF /* BucketCell.swift in Sources */,
 				3015780A213E705E0031DDFF /* BucketlistItemsView.swift in Sources */,
+				30F87A43215233E900A5E440 /* BucketItemsDataModel.swift in Sources */,
 				30AF72BC21381D31008C19DF /* SignUpView.swift in Sources */,
 				30B040A2214A8F1A00FA1B35 /* Networking.swift in Sources */,
 				3087AB2321407B1F00CE501A /* BucketListView.swift in Sources */,
@@ -354,6 +369,7 @@
 				3087AB2521407BF500CE501A /* BucketListDetailView.swift in Sources */,
 				3015780221395DDB0031DDFF /* UITableViewCell+NibName.swift in Sources */,
 				30F4589B212EEE6A00E33ABC /* AppDelegate.swift in Sources */,
+				30F87A41215233C200A5E440 /* BucketListDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

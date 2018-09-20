@@ -10,6 +10,10 @@ import UIKit
 
 class BucketCell: UITableViewCell, NibLoadable {
     
+    // MARK: Private Instance Properties
+    
+    @IBOutlet weak var bucketTitle: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 

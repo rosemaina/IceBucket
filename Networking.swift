@@ -26,9 +26,8 @@ class Networking {
     let baseURL = URL(string: "https://bucketlist-api1.herokuapp.com/")
     let preferences = UserDefaults.standard
     
-    func getBucketList() {
+    func getBucketList(url: String, completion: @escaping (_ data: Any?) -> ()) {
     
-//    completion: @escaping (_ data: Any?) -> ()
         let session = URLSession(configuration: .default)
         
         let relativeURL = URL(string: "/bucketlist", relativeTo: baseURL)
@@ -41,15 +40,26 @@ class Networking {
         request.setValue(token, forHTTPHeaderField: "Authorization")
         
         
-        let task = session.dataTask(with: request) { (data, res, err) in
-            if let error = err {
-                print("Something went wrong", error)
-                return
-            }
+        let task = session.dataTask(with: request) { (data, response, error) in
+            
+            guard
+                error == nil,
+                let data = data
+                else { return completion(nil) }
+            
+//            if let error = error {
+//                print("Something went wrong", error)
+//                return
+//            }
             do {
-                let formattedData = try JSONSerialization.jsonObject(with: data!, options: []) as? [String: Any]
-                
-                print("yay we have data", formattedData!)
+                guard
+                let formattedData = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+                    else {
+                        completion(nil)
+                        print("WE HAVE AN ERROR!!!!!!")
+                        return 
+                }
+                completion(formattedData)
             } catch {
                 print("Failed to decode data")
             }
