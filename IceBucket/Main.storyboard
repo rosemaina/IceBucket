@@ -230,6 +230,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tablview" destination="fK0-AV-8fU" id="PlN-vu-jIh"/>
+                        <segue destination="TRW-Kg-2Mr" kind="show" identifier="editBucket" id="fIg-pT-EgC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VqL-FW-KaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -254,12 +255,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lKx-7j-UnK">
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lKx-7j-UnK">
                                                     <rect key="frame" x="16" y="6" width="343" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -318,5 +319,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="S9H-hI-4Ji"/>
+        <segue reference="cnE-1a-s5y"/>
     </inferredMetricsTieBreakers>
 </document>
